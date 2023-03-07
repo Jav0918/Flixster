@@ -29,9 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src=https://imgur.com/a/4GoCcBO.mp4 title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-![Imgur Image] (https://imgur.com/a/4GoCcBO.mp4)
+(https://imgur.com/a/4GoCcBO.mp4)
 
 
 GIF created with Imgur and Screen Record on Mac
