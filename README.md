@@ -1,10 +1,10 @@
-# Project 2 - *Name of App Here*
+# Project 2 - Flixster Pt 1
 
-Submitted by: **Your Name Here**
+Submitted by: Jonathan Velez
 
-**Name of your app** is a movie browsing app that... [TODO] 
+**Flixster** is a movie browsing app that browses a list of a movies and gives basic data and over view for the movie
 
-Time spent: **X** hours spent in total
+Time spent: 4 hours spent in total
 
 ## Required Features
 
