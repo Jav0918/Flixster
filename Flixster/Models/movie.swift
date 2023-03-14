@@ -9,21 +9,29 @@ import Foundation
 
 // TODO: Pt 1 - Create a Track model struct
 
-struct Movie{
-    let originalTitle: String
+struct Movie: Decodable {
+    let original_title: String
     let overview: String
-    let posterPath: URL
-    let backDrop: URL
-    let voteAverage: String
-    let voteCount: String
-    let popularity: String
+    let poster_path: URL
+    let backdrop_path: URL
+    let vote_average: Double
+    let vote_count: Int
+    let popularity: Float
+    let id: Int
     
+}
+
+struct movieArray: Decodable {
+    
+    let results : [Movie]
 }
 
 
 // TODO: Pt 1 - Create an extension with a mock tracks static var
 
-extension Movie{
+//extension Movie{
+    
+    /*
     static var mockMovies: [Movie] = [
         Movie (originalTitle: "Knock at the Cabin",
                overview: "While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.",
@@ -67,7 +75,8 @@ extension Movie{
               
         
     ]
-}
+     */
+//}
 
 
 // MARK: Helper Methods

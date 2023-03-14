@@ -23,17 +23,20 @@ class DetailViewController: UIViewController {
     
     var movie: Movie!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        Nuke.loadImage(with: movie.backDrop, into: backdropImageView)
+        Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500/" + movie.backdrop_path.absoluteString)!, into: backdropImageView)
         
-        titleLabel.text = movie.originalTitle
-        votecountLabel.text = movie.voteCount
-        voteAverageLabel.text = movie.voteAverage
-        popularityLabel.text = movie.popularity
+        
+        
+        titleLabel.text = movie.original_title
+        votecountLabel.text = String(movie.vote_count)
+        voteAverageLabel.text = String(movie.vote_average)
+        popularityLabel.text = String(movie.popularity)
         overviewLabel.text = movie.overview
     }
     
@@ -47,4 +50,6 @@ class DetailViewController: UIViewController {
         
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+    
+    
     }

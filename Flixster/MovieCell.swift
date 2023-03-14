@@ -24,10 +24,10 @@ class MovieCell: UITableViewCell {
     }
     
     func configure(with movie: Movie){
-        movieNameLabel.text = movie.originalTitle
+        movieNameLabel.text = movie.original_title
         movieOverviewLabel.text = movie.overview
         
-        Nuke.loadImage(with: movie.posterPath, into: movieImageView)
+        Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w500/" + movie.poster_path.absoluteString)!, into: movieImageView)
     }
 
     @IBOutlet weak var movieImageView: UIImageView!

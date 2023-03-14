@@ -17,6 +17,10 @@
 		8113B00C29B70410009AA806 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113B00B29B70410009AA806 /* MovieCell.swift */; };
 		8113B01929B70A42009AA806 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 8113B01829B70A42009AA806 /* Nuke */; };
 		8113B01D29B711EB009AA806 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113B01C29B711EB009AA806 /* DetailViewController.swift */; };
+		8158ACA029BF85F5006558AB /* PostersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158AC9F29BF85F5006558AB /* PostersViewController.swift */; };
+		8158ACA329BF89A1006558AB /* Posters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158ACA229BF89A1006558AB /* Posters.swift */; };
+		8158ACA529BF8D14006558AB /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158ACA429BF8D13006558AB /* PosterCell.swift */; };
+		8158ACAF29BFCF11006558AB /* PosterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158ACAE29BFCF11006558AB /* PosterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		8113B00929B6F735009AA806 /* movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie.swift; sourceTree = "<group>"; };
 		8113B00B29B70410009AA806 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		8113B01C29B711EB009AA806 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8158AC9F29BF85F5006558AB /* PostersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostersViewController.swift; sourceTree = "<group>"; };
+		8158ACA229BF89A1006558AB /* Posters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posters.swift; sourceTree = "<group>"; };
+		8158ACA429BF8D13006558AB /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		8158ACAE29BFCF11006558AB /* PosterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,18 +72,30 @@
 		8113AFF429B6F6C8009AA806 /* Flixster */ = {
 			isa = PBXGroup;
 			children = (
-				8113B00929B6F735009AA806 /* movie.swift */,
+				8158ACA129BF8959006558AB /* Models */,
 				8113AFF529B6F6C8009AA806 /* AppDelegate.swift */,
 				8113AFF729B6F6C8009AA806 /* SceneDelegate.swift */,
+				8158AC9F29BF85F5006558AB /* PostersViewController.swift */,
 				8113AFF929B6F6C8009AA806 /* MoviesViewController.swift */,
 				8113B00B29B70410009AA806 /* MovieCell.swift */,
+				8158ACA429BF8D13006558AB /* PosterCell.swift */,
 				8113B01C29B711EB009AA806 /* DetailViewController.swift */,
+				8158ACAE29BFCF11006558AB /* PosterDetailViewController.swift */,
 				8113AFFB29B6F6C8009AA806 /* Main.storyboard */,
 				8113AFFE29B6F6C9009AA806 /* Assets.xcassets */,
 				8113B00029B6F6C9009AA806 /* LaunchScreen.storyboard */,
 				8113B00329B6F6C9009AA806 /* Info.plist */,
 			);
 			path = Flixster;
+			sourceTree = "<group>";
+		};
+		8158ACA129BF8959006558AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8113B00929B6F735009AA806 /* movie.swift */,
+				8158ACA229BF89A1006558AB /* Posters.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,11 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8158ACA329BF89A1006558AB /* Posters.swift in Sources */,
 				8113AFFA29B6F6C8009AA806 /* MoviesViewController.swift in Sources */,
+				8158ACA529BF8D14006558AB /* PosterCell.swift in Sources */,
 				8113AFF629B6F6C8009AA806 /* AppDelegate.swift in Sources */,
 				8113B00A29B6F735009AA806 /* movie.swift in Sources */,
 				8113B01D29B711EB009AA806 /* DetailViewController.swift in Sources */,
 				8113B00C29B70410009AA806 /* MovieCell.swift in Sources */,
+				8158ACA029BF85F5006558AB /* PostersViewController.swift in Sources */,
+				8158ACAF29BFCF11006558AB /* PosterDetailViewController.swift in Sources */,
 				8113AFF829B6F6C8009AA806 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,13 +329,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8RXYA4V5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flixster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -333,13 +357,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8RXYA4V5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flixster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
