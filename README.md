@@ -1,4 +1,4 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *Flixster Part 2
 
 Submitted by: Jonathan Velez
 
